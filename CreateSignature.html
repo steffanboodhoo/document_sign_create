@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div class='row'>
+        <canvas id='signature_canvas'></canvas>
+    </div>
+    <div class='row'>
+        <div class='col'>
+            <button id='btn_signature_add'>Add Signature</button>
+        </div>
+        <div class='col'>
+            <input type='text' id='input_text'/>
+            <button id='btn_add_text'>Add Text</button>
+        </div>
+        <div class='col'>
+            <button id='btn_pdf_generate'>Generate Document</button>
+        </div>
+    </div>
+</body>
+
+<!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script> -->
+<!-- <script type='text/javascript' src='./node_modules/pdfkit/js/pdfkit.es5.js'></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script> -->
+<script type='text/javascript' src='pdfkit.js'></script>
+<script type='text/javascript' src='dist/signature.bundle.js'></script>
+
+</html>
