@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-start": "webpack-dev-server --watch-poll"
+    "webpack-build": "webpack --watch-poll",
+    "webpack-start": "webpack-dev-server --hot --watch-poll"
   },
   "author": "Steffan Boodhoo",
   "license": "ISC",
