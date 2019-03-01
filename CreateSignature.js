@@ -3,9 +3,7 @@
 // import jsPDF from 'jspdf';
 // import SignaturePad from 'signature_pad';
 
-// let LINES = 0, VSPACE = 5;//5mm
-// let LINE_max = 68;
-// let DOC = null;
+import Document from './CustomDocument';
 window.onload = () => {
     // let signaturePad = init('signature_canvas');
     let doc = new Document('signature_canvas')

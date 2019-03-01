@@ -1,12 +1,17 @@
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const htmlPlugin = new HtmlWebpackPlugin({
+    template: './CreateSignature.html'
+})
 
 
 module.exports = {
-    entry: {
-        signature: './CreateSignature.js',
-        // document:'./GenerateDocument.js'
-    }
+    // entry: {
+    //     signature: './CreateSignature.js',
+    //     // document:'./GenerateDocument.js'
+    // }
+    entry: './CreateSignature.js'
 
     , output: {
         filename: '[name].bundle.js',
@@ -21,9 +26,10 @@ module.exports = {
             }
         ]
     }
-    // ,plugins:{
-
-    // }
+    ,plugins:[
+        htmlPlugin,
+        new webpack.HotModuleReplacementPlugin()
+    ]
     , mode: 'development'
     , devtool: 'inline-source-map'
     , devServer: {

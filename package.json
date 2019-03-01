@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack-build": "webpack --mode=production",
-    "webpack-start": "webpack-dev-server --hot --watch-poll"
+    "webpack-start": "webpack-dev-server"
   },
   "author": "Steffan Boodhoo",
   "license": "ISC",

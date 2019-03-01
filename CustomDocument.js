@@ -1,5 +1,6 @@
 import SignaturePad from 'signature_pad';
-import PDFDocument from 'pdfkit';
+import PDFDocument from './pdfkit';
+
 class Document {
     constructor(canvas_id, options) {
         this.signaturePad = null;
