@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-build": "webpack --watch-poll",
+    "webpack-build": "webpack --mode=production",
     "webpack-start": "webpack-dev-server --hot --watch-poll"
   },
   "author": "Steffan Boodhoo",
