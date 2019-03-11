@@ -1,12 +1,15 @@
-// import { pdfMake } from "pdfmake/build/pdfmake";
+// import CustDocument from './CustomDocument';
 
-// import jsPDF from 'jspdf';
-// import SignaturePad from 'signature_pad';
-
-import Document from './CustomDocument';
 window.onload = () => {
+    let SIGNED = false;
+    console.log('stuff')
     // let signaturePad = init('signature_canvas');
-    let doc = new Document('signature_canvas')
+    let doc = new CustDocument('signature_canvas')
+    // CustomDocument_CustDocument
+
+    document.getElementById('signature_canvas').addEventListener('click', (ev) => {
+        SIGNED = true;
+    })
     //Save Signature Button
     document.getElementById('btn_signature_add').onclick = () => {
         // add_signature({ signaturePad });
@@ -20,7 +23,10 @@ window.onload = () => {
     };
     //Save Signature Button
     document.getElementById('btn_pdf_generate').onclick = () => {
-        doc.finish_document();
+        if(SIGNED)
+            doc.finish_document();
+        else
+            console.log('fuck off')
     };
     
     //Add Text Button

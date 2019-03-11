@@ -1,7 +1,8 @@
 import SignaturePad from 'signature_pad';
 import PDFDocument from './pdfkit';
+import blobStream from './blob-stream';
 
-class Document {
+class CustDocument {
     constructor(canvas_id, options) {
         this.signaturePad = null;
         this.DOC = null;
@@ -68,4 +69,5 @@ class Document {
         window.URL.revokeObjectURL(url);
     }
 }
-export default Document;
+console.log('loaded, version 1.1.1')
+export default CustDocument;
